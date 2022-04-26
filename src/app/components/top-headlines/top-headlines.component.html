@@ -1,0 +1,38 @@
+<!-- <br> -->
+<!-- <h1>Categories</h1> -->
+<mat-toolbar color="secondary">
+  <mat-toolbar-row>
+    <mat-nav-list>
+      <mat-list-item (click)="getCategory('business')">Business</mat-list-item>
+      <mat-list-item (click)="getCategory('entertainment')">Entertainment</mat-list-item>
+      <mat-list-item (click)="getCategory('general')">General</mat-list-item>
+      <mat-list-item (click)="getCategory('health')">Health</mat-list-item>
+      <mat-list-item (click)="getCategory('science')">Science</mat-list-item>
+      <mat-list-item (click)="getCategory('sports')">Sports</mat-list-item>
+      <mat-list-item (click)="getCategory('technology')">Technology</mat-list-item>
+
+    </mat-nav-list>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div>
+    <mat-card class="card" *ngFor="let article of articles;">
+        <mat-card-header>
+          <mat-card-title>{{article.title}}</mat-card-title>
+          <mat-card-subtitle>{{article.author}}</mat-card-subtitle>
+        </mat-card-header>
+        <a href="{{article.url}}">
+            <img *ngIf="article.urlToImage" mat-card-image src="{{article.urlToImage}}" alt="Photo of a Shiba Inu">
+            <img *ngIf="article.urlToImage === null" mat-card-image src="https://www.intl-spectrum.com/articles/a1176/ArticleDefault.jpg?x=40x28">
+        </a>
+            <mat-card-content>
+          <p>
+            {{article.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Save</button>
+          <button mat-button>Open</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
+<pre>{{ response | json }}</pre>
