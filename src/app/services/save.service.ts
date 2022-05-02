@@ -28,18 +28,32 @@ export class SaveService {
       .then(_ => console.log('success on add'))
       .catch(error => console.log('add', error))
    }
-   getArticleObservable(): Observable<Article[]> {
-    return this.articlesRef.snapshotChanges()
-    .pipe(
-      map((items:DocumentChangeAction<Article>[]): Article[] => {
-        return items.map((item: DocumentChangeAction<Article>): Article => {
-          return {
-            id: item.payload.doc.id,
-            url: item.payload.doc.data().url
-          };
-        });
-      }),
-      catchError(this.errorHandler)
-    )
-   }
+
+
+  //  getArticleObservable(): Observable<Article[]> {
+  //   return this.articlesRef.snapshotChanges()
+  //   .pipe(
+  //     map((items:DocumentChangeAction<Article>[]): Article[] => {
+  //       return items.map((item: DocumentChangeAction<Article>): Article => {
+  //         return {
+  //           id: item.payload.doc.id,
+  //           url: item.payload.doc.data().url,
+  //           uid: item.payload.doc.data().uid
+  //         };
+  //       });
+  //     }),
+  //     catchError(this.errorHandler)
+  //   )
+  //  }
+  getArticleObservable(): Observable<any> {
+    return this.articlesRef.valueChanges();
+  }
+  //  async getArticle(){
+  //    let ref = this.db.collection('saved-articles');
+  //    let doc = await ref.get();
+  //    console.log(doc);
+  //    doc.subscribe((res:any) => {
+  //      console.log(res)
+  //    });
+  //  }
 }

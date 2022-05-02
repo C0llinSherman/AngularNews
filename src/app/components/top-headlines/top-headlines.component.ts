@@ -31,6 +31,7 @@ export class TopHeadlinesComponent implements OnInit {
       console.log(this.response)
     })
     this.uid = localStorage.getItem('uid')
+    
   }
   getCategory(category: string) {
     this.category = category
@@ -41,10 +42,10 @@ export class TopHeadlinesComponent implements OnInit {
     })
   }
 
-  saveArticle(url: string) {
-    this.saveService.saveArticle({ url: url })
+  saveArticle(article) {
+    this.saveService.saveArticle({ article: article, uid: this.uid })
     console.log(this.uid)
-    console.log(url)
+    console.log(article)
   }
 
 }

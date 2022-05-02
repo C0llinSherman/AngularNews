@@ -19,8 +19,8 @@
           <mat-card-title>{{article.title}}</mat-card-title>
           <mat-card-subtitle>{{article.author}}</mat-card-subtitle>
         </mat-card-header>
-        <a href="{{article.url}}">
-            <img *ngIf="article.urlToImage" mat-card-image src="{{article.urlToImage}}" alt="Photo of a Shiba Inu">
+        <a href="{{article.url}}" target="_blank">
+            <img *ngIf="article.urlToImage" mat-card-image src="{{article.urlToImage}}" alt="Article Image">
             <img *ngIf="article.urlToImage === null" mat-card-image src="https://www.intl-spectrum.com/articles/a1176/ArticleDefault.jpg?x=40x28">
         </a>
             <mat-card-content>
@@ -30,8 +30,9 @@
         </mat-card-content>
         <p>{{article.publishedAt | date:'medium'}}</p>
         <mat-card-actions>
-          <button mat-button (click)="saveArticle(article.url)">Save</button>
-          <button mat-button>Open</button>
+          <button mat-button (click)="saveArticle(article)">Save</button>
+          <a href="{{article.url}}" target="_blank"><button mat-button>Open</button></a>
+
         </mat-card-actions>
       </mat-card>
 </div>

@@ -1,4 +1,5 @@
 export interface Article {
-    url: string;
+    article: any;
+    uid?: string;
     id?: string;
 }

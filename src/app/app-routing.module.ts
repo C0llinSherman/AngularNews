@@ -4,13 +4,14 @@ import { LikedComponent } from './components/liked/liked.component';
 import { LoginComponent } from './components/login/login.component';
 import { SearchComponent } from './components/search/search.component';
 import { TopHeadlinesComponent } from './components/top-headlines/top-headlines.component';
+import { LoggedInGuard } from 'ngx-auth-firebaseui';
 
 const routes: Routes = [
   // { path: 'welcome', component: WelcomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'top-headlines', component: TopHeadlinesComponent},
-  { path: 'search', component: SearchComponent},
-  { path: 'liked', component: LikedComponent},
+  { path: 'top-headlines', component: TopHeadlinesComponent, canActivate: [LoggedInGuard]},
+  { path: 'search', component: SearchComponent, canActivate: [LoggedInGuard]},
+  { path: 'liked', component: LikedComponent, canActivate: [LoggedInGuard]},
 
   { path: '**', component: LoginComponent },
 ];

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthProvider} from 'ngx-auth-firebaseui'
+import { Router } from '@angular/router';
+import { AuthProvider } from 'ngx-auth-firebaseui'
+import { AppComponent } from 'src/app/app.component';
 
 
 
@@ -9,16 +11,20 @@ import {AuthProvider} from 'ngx-auth-firebaseui'
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-providers = AuthProvider
-  constructor() { }
+  
+  providers = AuthProvider
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    
+    if (localStorage.getItem('uid')) {
+      this.router.navigate(['/top-headlines'])
+    }
   }
 
-  printUser(event){
-    console.log(event.user._delegate.uid)
-localStorage.setItem("uid", event.user._delegate.uid)
+  printUser(event) {
+
+    localStorage.setItem("uid", event.user._delegate.uid)
+    this.router.navigate(['/top-headlines'])
   }
 
 }
