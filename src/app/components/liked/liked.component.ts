@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { Article } from 'src/app/interfaces/article';
+import { SaveService } from 'src/app/services/save.service';
 
 @Component({
   selector: 'app-liked',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LikedComponent implements OnInit {
 
-  constructor() { }
+article$: any;
+
+  constructor(private saveService: SaveService) { 
+  
+      
+  }
+  
 
   ngOnInit(): void {
+    this.getArticles()
+  }
+
+  getArticles() {
+    this.article$ = this.saveService.getArticleObservable();
   }
 
 }

@@ -1,5 +1,3 @@
-<!-- <br> -->
-<!-- <h1>Categories</h1> -->
 <mat-toolbar color="secondary">
   <mat-toolbar-row>
     <mat-nav-list>
@@ -14,6 +12,7 @@
     </mat-nav-list>
   </mat-toolbar-row>
 </mat-toolbar>
+<h1>{{category | titlecase}}</h1>
 <div>
     <mat-card class="card" *ngFor="let article of articles;">
         <mat-card-header>
@@ -29,8 +28,9 @@
             {{article.description}}
           </p>
         </mat-card-content>
+        <p>{{article.publishedAt | date:'medium'}}</p>
         <mat-card-actions>
-          <button mat-button>Save</button>
+          <button mat-button (click)="saveArticle(article.url)">Save</button>
           <button mat-button>Open</button>
         </mat-card-actions>
       </mat-card>

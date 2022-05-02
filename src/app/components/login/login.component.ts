@@ -13,6 +13,12 @@ providers = AuthProvider
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  printUser(event){
+    console.log(event.user._delegate.uid)
+localStorage.setItem("uid", event.user._delegate.uid)
   }
 
 }

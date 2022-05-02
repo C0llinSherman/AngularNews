@@ -27,5 +27,9 @@ search(){
     this.articles = this.response.articles
     console.log(this.response)
   })
+
 }
+  saveArticle(url:string){
+    console.log(url)
+  }
 }

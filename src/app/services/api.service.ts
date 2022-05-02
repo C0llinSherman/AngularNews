@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class APIService {
 
-apiKey = 'f8aed209fcc64c9a88db4dabd6720960'
+// apiKey = 'f8aed209fcc64c9a88db4dabd6720960'
+apiKey = '63a3656eee3b4e8cb8b8c5b271f66252'
 
   constructor(private _http: HttpClient) { }
   getFeatured (category: string){

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase/compat';
+import { Observable } from 'rxjs';
 import { APIService } from 'src/app/services/api.service';
+import { SaveService } from 'src/app/services/save.service';
+import { Article } from 'src/app/interfaces/article';
 
 @Component({
   selector: 'app-top-headlines',
@@ -9,13 +12,17 @@ import { APIService } from 'src/app/services/api.service';
 })
 export class TopHeadlinesComponent implements OnInit {
 
-  constructor(private apiService: APIService) { }
+  constructor(
+    private apiService: APIService,
+    private saveService: SaveService
+    ) { }
 
   category: string = 'general';
   response: any;
   articles: any;
+  uid: string;
   // user = FirebaseAuth.getInstance().currentUser
-  
+
 
   ngOnInit(): void {
     this.apiService.getFeatured(this.category).subscribe(res => {
@@ -23,6 +30,7 @@ export class TopHeadlinesComponent implements OnInit {
       this.articles = this.response.articles
       console.log(this.response)
     })
+    this.uid = localStorage.getItem('uid')
   }
   getCategory(category: string) {
     this.category = category
@@ -33,8 +41,10 @@ export class TopHeadlinesComponent implements OnInit {
     })
   }
 
-  saveArticle(){
-
+  saveArticle(url: string) {
+    this.saveService.saveArticle({ url: url })
+    console.log(this.uid)
+    console.log(url)
   }
 
 }

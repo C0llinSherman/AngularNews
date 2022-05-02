@@ -1,3 +1,1 @@
-<ngx-auth-firebaseui
-            [providers]="[ providers.Google]">
-          </ngx-auth-firebaseui>
+<ngx-auth-firebaseui [providers]="[providers.Google]" (onSuccess)="printUser($event)"></ngx-auth-firebaseui>
