@@ -18,5 +18,4 @@ export class AppComponent {
     localStorage.removeItem('uid')
     this.router.navigate(['/login'])
   }
-  
 }

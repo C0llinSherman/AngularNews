@@ -1,19 +1,19 @@
 mat-nav-list {
-    display: flex;
-  }
-  
-  .second-row {
-    background-color: rgb(200,200,200);
-  }
-  
-  .mat-list-base {
-    padding: 0px;
-  }
-  
-  .active {
-    background-color: rgb(235, 235, 235);
-  }
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-  
+  display: flex;
+}
+
+.second-row {
+  background-color: rgb(200, 200, 200);
+}
+
+.mat-list-base {
+  padding: 0px;
+}
+
+.active {
+  background-color: rgb(235, 235, 235);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

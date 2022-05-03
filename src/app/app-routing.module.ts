@@ -7,13 +7,11 @@ import { TopHeadlinesComponent } from './components/top-headlines/top-headlines.
 import { LoggedInGuard } from 'ngx-auth-firebaseui';
 
 const routes: Routes = [
-  // { path: 'welcome', component: WelcomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'top-headlines', component: TopHeadlinesComponent, canActivate: [LoggedInGuard]},
-  { path: 'search', component: SearchComponent, canActivate: [LoggedInGuard]},
-  { path: 'liked', component: LikedComponent, canActivate: [LoggedInGuard]},
-
-  { path: '**', component: LoginComponent },
+  { path: 'top-headlines', component: TopHeadlinesComponent, canActivate: [LoggedInGuard] },
+  { path: 'search', component: SearchComponent, canActivate: [LoggedInGuard] },
+  { path: 'liked', component: LikedComponent, canActivate: [LoggedInGuard] },
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({

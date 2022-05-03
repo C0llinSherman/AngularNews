@@ -34,12 +34,10 @@ import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
     FormsModule,
     MatToolbarModule,
     MatListModule,
-
     NgxAuthFirebaseUIModule.forRoot(
       {
         apiKey: 'AIzaSyDpRq1S6XRWOGGZRlZMulJKnVPQ5SswQ0c',
         authDomain: 'news-api-4f7ea.firebaseapp.com',
-        // databaseURL: 'your-firebase-databaseURL',
         projectId: 'news-api-4f7ea',
         storageBucket: 'news-api-4f7ea.appspot.com',
         messagingSenderId: '227797413674'
@@ -61,8 +59,7 @@ import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
         guardProtectedRoutesUntilEmailIsVerified: true,
         enableEmailVerification: true, // default: true
         useRawUserCredential: true, // If set to true outputs the UserCredential object instead of firebase.User after login and signup - Default: false
-      }),
-   
+      })
   ],
   providers: [],
   bootstrap: [AppComponent]

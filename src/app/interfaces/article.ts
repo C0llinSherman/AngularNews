@@ -1,5 +1,5 @@
 export interface Article {
     article: any;
-    uid?: string;
+    uid?: string | undefined | null;
     id?: string;
 }

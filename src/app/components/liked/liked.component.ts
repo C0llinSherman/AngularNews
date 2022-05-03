@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { Article } from 'src/app/interfaces/article';
 import { SaveService } from 'src/app/services/save.service';
 
 @Component({
@@ -13,21 +11,13 @@ export class LikedComponent implements OnInit {
   article$: any;
   userArticles$: any = []
   otherArticles$: any = []
-  uid: string;
+  uid: string | undefined | null;
 
-  constructor(private saveService: SaveService) {
-
-
-  }
-
+  constructor(private saveService: SaveService) { }
 
   ngOnInit(): void {
     this.uid = localStorage.getItem('uid')
     this.getArticles()
-    // this.saveService.getArticle()
-
-
-
   }
 
   getArticles() {
@@ -37,8 +27,6 @@ export class LikedComponent implements OnInit {
       console.log(this.article$)
       this.sort()
     });
-
-
   }
 
   sort() {
@@ -51,5 +39,4 @@ export class LikedComponent implements OnInit {
       }
     }
   }
-
 }

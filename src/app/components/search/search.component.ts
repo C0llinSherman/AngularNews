@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from 'src/app/interfaces/article';
 import { APIService } from 'src/app/services/api.service';
 import { SaveService } from 'src/app/services/save.service';
 
@@ -17,7 +18,7 @@ export class SearchComponent implements OnInit {
   query: any;
   response: any;
   articles: any;
-  uid: string;
+  uid: string | undefined | null;
 
   ngOnInit(): void {
     this.apiService.getEverything(this.query).subscribe(res => {
@@ -33,9 +34,8 @@ export class SearchComponent implements OnInit {
       this.articles = this.response.articles
       console.log(this.response)
     })
-
   }
-  saveArticle(article) {
+  saveArticle(article: Article) {
     this.saveService.saveArticle({ article: article, uid: this.uid })
     console.log(this.uid)
     console.log(article)
