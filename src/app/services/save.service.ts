@@ -12,7 +12,6 @@ export class SaveService {
     this.articlesRef = this.db.collection('saved-articles')
   }
   saveArticle(article: Article) {
-    console.log('asld;kfj')
     return this.articlesRef.add(article)
       .then(_ => console.log('success on add'))
       .catch(error => console.log('add', error))

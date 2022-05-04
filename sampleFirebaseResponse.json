@@ -1,0 +1,146 @@
+[
+    {
+        "uid": "PrtVD8mbXHMTDfYXi8QFDnN9qmt1",
+        "article": {
+            "content": "In Georgia, the seating of a special purpose grand jury is scheduled to begin Monday, marking a new phase in an Atlanta-area prosecutors probe into whether former president Donald Trump and others il… [+1410 chars]",
+            "url": "https://www.washingtonpost.com/politics/2022/05/02/biden-javelins-first-lady-refugees/",
+            "source": {
+                "name": "The Washington Post",
+                "id": "the-washington-post"
+            },
+            "title": "Pelosi, Jill Biden among political figures expressing solidarity with Ukraine - The Washington Post",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/VF7Q54DEBUI6ZP3QLAADGUOGE4.jpg&w=1440",
+            "author": "John Wagner, Mariana Alfaro",
+            "description": "President Biden on Monday will present awards to federal employees and host a reception to mark the end of Ramadan ahead of a planned visit to Alabama on Tuesday to tour a Lockheed Martin facility that manufactures Javelin anti-tank missiles being sent to Ukr…",
+            "publishedAt": "2022-05-02T14:15:00Z"
+        }
+    },
+    {
+        "article": {
+            "source": {
+                "name": "Github.com",
+                "id": null
+            },
+            "publishedAt": "2022-04-30T17:10:10Z",
+            "description": "An Erlang implementation of RAFT from WhatsApp. Contribute to WhatsApp/waraft development by creating an account on GitHub.",
+            "urlToImage": "https://opengraph.githubassets.com/c16569d3f59b5ff42366c1152af98c8b7a0893064a6dc098a15d27d2922450c0/WhatsApp/waraft",
+            "url": "https://github.com/WhatsApp/waraft",
+            "author": "WhatsApp",
+            "content": "WARaft is a Raft library in Erlang by WhatsApp. It provides an Erlang implementation to obtain consensus among replicated state machines. Consensus is a fundamental problem in fault-tolerant distribu… [+2987 chars]",
+            "title": "WARaft: An Erlang implementation of RAFT"
+        },
+        "uid": "NdwEuG0unZMAa2Zrxm4xlj5Ry7R2"
+    },
+    {
+        "article": {
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220501234759-03-country-music-hall-of-fame-medallion-2022-super-tease.jpg",
+            "source": {
+                "name": "CNN",
+                "id": "cnn"
+            },
+            "publishedAt": "2022-05-02T14:14:00Z",
+            "content": "(CNN)Naomi Judd's daughters honored her during her induction into the Country Music Hall of Fame Sunday night, just one day after they announced her death.\r\nDuring the ceremony, Wynonna Judd and Ashl… [+3658 chars]",
+            "url": "https://www.cnn.com/2022/05/01/entertainment/naomi-judd-country-music-hall-of-fame/index.html",
+            "author": "Dakin Andone, CNN",
+            "description": "Naomi Judd's daughters honored her during her induction into the Country Music Hall of Fame Sunday night, just one day after they announced her death.",
+            "title": "Naomi Judd remembered by daughters at Country Music Hall of Fame ceremony - CNN"
+        },
+        "uid": "J7kIUkhCRtSImpZoeStT9Pd29A03"
+    },
+    {
+        "article": {
+            "urlToImage": "https://danlarkorg.files.wordpress.com/2022/04/image-3.png",
+            "author": null,
+            "title": "Changing std:sort at Google’s Scale and Beyond",
+            "publishedAt": "2022-04-20T15:57:01Z",
+            "url": "https://danlark.org/2022/04/20/changing-stdsort-at-googles-scale-and-beyond/",
+            "source": {
+                "id": null,
+                "name": "Danlark.org"
+            },
+            "content": "TL;DR; We are changingstd::sort in LLVM’s libcxx. That’s a long story of what it took us to get there and all possible consequences, bugs you might encounter with examples from open source. We provid… [+41585 chars]",
+            "description": "TL;DR; We are changing std::sort in LLVM’s libcxx. That’s a long story of what it took us to get there and all possible consequences, bugs you might encounter with examples from open so…"
+        },
+        "uid": "NdwEuG0unZMAa2Zrxm4xlj5Ry7R2"
+    },
+    {
+        "uid": "oKUBwiL7e9XuWeXirW466mudZTA3",
+        "article": {
+            "url": "https://www.imore.com/best-ear-hooks-airpods-3",
+            "publishedAt": "2022-05-03T12:00:02Z",
+            "source": {
+                "id": null,
+                "name": "iMore"
+            },
+            "urlToImage": "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2021/10/airpods-3-buds.jpg",
+            "title": "Keep your AirPods 3 where they belong with these ear hooks",
+            "author": "Karen S Freeman",
+            "content": "Best\r\near hooks for AirPods 3\r\niMore2022\r\nYou certainly don't want to lose your fabulous AirPods 3, and ear hooks can help them fit in your ear more securely. Generally, ear hooks won't fit inside th… [+3112 chars]",
+            "description": "You certainly don't want to lose your fabulous AirPods 3, and ear hooks can help them fit in your ear more securely. Generally, ear hooks won't fit inside the charging case, so keep in mind that you'll need to put them on and take them off each time you use t…"
+        }
+    },
+    {
+        "uid": "J7kIUkhCRtSImpZoeStT9Pd29A03",
+        "article": {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMikwFodHRwczovL3d3dy5pbnZlc3RvcnMuY29tL21hcmtldC10cmVuZC9zdG9jay1tYXJrZXQtdG9kYXkvZG93LWpvbmVzLWZ1dHVyZXMtZmFsbC1hZnRlci1zdG9jay1tYXJrZXQtc2VsbC1vZmYtMTAteWVhci10cmVhc3VyeS15aWVsZC1uZWFycy1uZXctaGlnaC_SAQA?oc=5",
+            "content": null,
+            "title": "Dow Jones Rises After Stock Market Sell-Off Worsened; Treasury Yield Hits New High - Investor's Business Daily",
+            "publishedAt": "2022-05-02T13:56:00Z",
+            "urlToImage": null,
+            "description": null,
+            "author": null
+        }
+    },
+    {
+        "article": {
+            "content": "An astrophotographer captured a beautiful picture of two planets aligned in the sky above Rome — and a little rain didn't stop him.\r\nGianluca Masi spotted Venus and Jupiter hiding behind a thin cloud… [+2382 chars]",
+            "url": "https://www.livescience.com/astrophotographer-rain-jupiter-venus-rome",
+            "source": {
+                "name": "Live Science",
+                "id": null
+            },
+            "publishedAt": "2022-05-02T22:47:39Z",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/2AAfG4FzdvJcobPDShnNpU-1200-80.jpg",
+            "title": "Fuzzy 'halo' envelops Venus as it cozies up to Jupiter in photo of planetary conjunction - Livescience.com",
+            "author": "Elizabeth Howell",
+            "description": "A thin cloud over the planets created a colorful 'corona' around Venus."
+        },
+        "uid": "NdwEuG0unZMAa2Zrxm4xlj5Ry7R2"
+    },
+    {
+        "article": {
+            "source": {
+                "name": "Nintendo Life",
+                "id": null
+            },
+            "content": "Subscribe to Nintendo Life on YouTube\r\nSince Nintendo introduced its higher-priced Expansion Pack tier to the Switch Online service, it's continued to bolster it with more DLC offerings and retro con… [+1059 chars]",
+            "author": "Liam Doolan",
+            "title": "Nintendo Updates Its 'Switch Online + Expansion Pack' Trailer With New Footage - Nintendo Life",
+            "publishedAt": "2022-05-03T00:05:00Z",
+            "description": "More bang for your buck",
+            "urlToImage": "https://images.nintendolife.com/b2ca06219ed65/1280x720.jpg",
+            "url": "https://www.nintendolife.com/news/2022/05/nintendo-updates-its-switch-online-plus-expansion-pack-trailer-with-new-footage"
+        },
+        "uid": "oKUBwiL7e9XuWeXirW466mudZTA3"
+    },
+    {
+        "article": {
+            "urlToImage": "https://images.wsj.net/im-535503/social",
+            "url": "https://www.wsj.com/articles/germany-calls-for-russian-oil-embargo-as-eu-prepares-new-sanctions-11651488395",
+            "publishedAt": "2022-05-02T13:16:00Z",
+            "author": "Laurence Norman and Bojan Pancevski",
+            "title": "EU Prepares Ban on Russian Oil - The Wall Street Journal",
+            "description": "The bloc’s executive is expected to propose a phased-in embargo on Russian oil, taking effect by year-end, after Germany came out in support of a ban.",
+            "content": "The European Union is likely to propose ending purchases of Russian crude oil by the 27-country bloc before the end of 2022, and a ban on purchases of Russian refined-oil products by year-end, accord… [+330 chars]",
+            "source": {
+                "name": "The Wall Street Journal",
+                "id": "the-wall-street-journal"
+            }
+        },
+        "uid": "PrtVD8mbXHMTDfYXi8QFDnN9qmt1"
+    }
+]

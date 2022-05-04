@@ -24,7 +24,6 @@ export class SearchComponent implements OnInit {
     this.apiService.getEverything(this.query).subscribe(res => {
       this.response = res;
       this.articles = this.response.articles
-      console.log(this.response)
     })
     this.uid = localStorage.getItem('uid')
   }
@@ -32,12 +31,9 @@ export class SearchComponent implements OnInit {
     this.apiService.getEverything(this.query).subscribe(res => {
       this.response = res;
       this.articles = this.response.articles
-      console.log(this.response)
     })
   }
   saveArticle(article: Article) {
     this.saveService.saveArticle({ article: article, uid: this.uid })
-    console.log(this.uid)
-    console.log(article)
   }
 }

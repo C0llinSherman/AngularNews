@@ -22,9 +22,7 @@ export class LikedComponent implements OnInit {
 
   getArticles() {
     this.saveService.getArticleObservable().subscribe((data: any) => {
-      console.log(data)
       this.article$ = data
-      console.log(this.article$)
       this.sort()
     });
   }
